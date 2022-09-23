@@ -1,5 +1,7 @@
 body {
-  background-color: #252525;
+  background: linear-gradient(45deg, #B0C1D9, #8EA8BF);
+  background-image: url(./img/light-blue-vector-low-poly-crystal-background-polygon-design-pa-915809723.jpg);
+  height: 100vh;
 }
 .login-page {
   position: absolute;
@@ -11,13 +13,16 @@ body {
   transform: translate(-50%, -50%);
   border-radius: 5px;
   display: flex;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .login-welcome {
   width: 50%;
   background-color: red;
-  background-image: url(./img/logo.jpg);
+  background-image: url(./img/Blue-Abstract-Background-For-You-3165286061.jpg);
   background-size: cover;
   background-position: center;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 .login-area {
   padding: 50px;
@@ -47,7 +52,7 @@ input[type=text] {
     background-color: transparent;
     border: 0;
     border-image-slice: 1;
-    border-image-source: linear-gradient(45deg, #5d00ff, #ce3fb4);
+    border-image-source: linear-gradient(45deg, #067cae, #5fc2d5);
     border-bottom: 4px solid blue;
     width: 100%;
     margin-bottom: 25px;
@@ -61,7 +66,7 @@ input[type=file] {
 .login-btn {
     width: 100%;
     margin-top: auto;
-    background:linear-gradient(45deg, #5d00ff, #ce3fb4);
+    background:linear-gradient(65deg, #067cae, #5fc2d5);
     border: 0;
     padding: 20px;
     color: white;
