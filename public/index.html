@@ -1,20 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    />
-    <link rel="stylesheet" href="./style.css" />
-    <title>Gast</title>
-  </head>
-  <body>
-    <!--Content-->
-    <script src="/socket.io/socket.io.js"></script>
-    <script src="./app.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" 
+</head>
+
+<body>
+  <section class="login-page">
+    <div class="login-welcome">
+    </div>
+    <div class="login-area">
+      <h1>User Information</h1>
+      <form class="login-form" method="POST" action="/login" enctype="multipart/form-data">
+        <label for="user-input">Username</label>
+        <input type="text" name="user-input" id="user-input">
+        <label for="image">Profile Picture</label>
+        <input type="file" name="image" id="image">
+        <input type="submit" value="Continue  " class="login-btn">
+      </form>
+        <p>or</p>
+        <button class="guest-btn">Continue as Guest</button>
+    </div>
+
+    </div>
+
+  </section>
+  <!--Content-->
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="./app.js"></script>
+</body>
+
 </html>
