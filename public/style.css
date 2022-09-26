@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(45deg, #B0C1D9, #8EA8BF);
+  background: linear-gradient(45deg, #b0c1d9, #8ea8bf);
   background-image: url(./img/light-blue-vector-low-poly-crystal-background-polygon-design-pa-915809723.jpg);
   height: 100vh;
 }
@@ -13,11 +13,12 @@ body {
   transform: translate(-50%, -50%);
   border-radius: 5px;
   display: flex;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .login-welcome {
   width: 50%;
-  background-color: red;
   background-image: url(./img/Blue-Abstract-Background-For-You-3165286061.jpg);
   background-size: cover;
   background-position: center;
@@ -29,11 +30,11 @@ body {
   width: 50%;
 }
 h1 {
-    font-family: "Roboto", sans-serif;
-    color: #252525;
-  }
+  font-family: "Roboto", sans-serif;
+  color: #252525;
+}
 .login-form {
-    position: relative;
+  position: relative;
   font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
@@ -43,46 +44,45 @@ h1 {
   height: calc(60%);
 }
 label {
-    font-size: small;
-    color: #585858;
-    font-weight: bold;
+  font-size: small;
+  color: #585858;
+  font-weight: bold;
 }
-input[type=text] {
-    height: 5px;
-    background-color: transparent;
-    border: 0;
-    border-image-slice: 1;
-    border-image-source: linear-gradient(45deg, #067cae, #5fc2d5);
-    border-bottom: 4px solid blue;
-    width: 50%;
-    margin-bottom: 25px;
-    transition: 0.5s;
-    font-size: large;
-    padding: 10px;
+input[type="text"] {
+  height: 15px;
+  background-color: transparent;
+  border: 0;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(45deg, #067cae, #5fc2d5);
+  border-bottom: 4px solid blue;
+  width: 100%;
+  margin-bottom: 25px;
 }
-input[type=text]:focus {
-    outline: none;
-    width: 70%;
+input[type="text"]:focus {
+  outline: none;
+}
+input[type="file"] {
+  margin-top: 5px;
 }
 .login-btn {
-    width: 100%;
-    background:linear-gradient(65deg, #067cae, #5fc2d5);
-    border: 0;
-    padding: 20px;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    margin-top: auto;
+  width: 100%;
+  margin-top: auto;
+  background: linear-gradient(65deg, #067cae, #5fc2d5);
+  border: 0;
+  padding: 20px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
 }
 p {
-    text-align: center;
-    font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
 }
 .guest-btn {
-    font-family: "Roboto", sans-serif;
-    background-color: transparent;
-    border: 2px solid #353535;
-    padding: 15px;
-    width: 100%;
-    cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  background-color: transparent;
+  border: 2px solid #353535;
+  padding: 15px;
+  width: 100%;
+  cursor: pointer;
 }

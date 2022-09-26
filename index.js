@@ -19,16 +19,17 @@ const users = [];
 //Socket.io
 io.on("connection", (socket) => {
   let myUser = {};
-  myUser.id = socket.id;
   //LOGIN
   //Una vez se hace el submit del login desde el front ->
   socket.on("login", (username) => {
     validateUsername(username);
     myUser.username = username;
+    myUser.id = socket.id;
     users.push(myUser);
   });
 });
 
+//Functions
 function validateUsername(data) {
   if (data.includes("<", ">", "*", "/")) {
     data = "Hacker";
